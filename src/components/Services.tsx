@@ -101,7 +101,9 @@ const Services = () => {
                 </div>
 
                 <a
-                  href="https://wa.me/919027723883"
+                  href={`https://wa.me/919027723883?text=${encodeURIComponent(
+                    `Hi, I'm interested in your ${service.title}. Please share more details.`
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full bg-gradient-to-r ${service.gradient} hover:shadow-lg text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 hover:scale-105 group flex items-center justify-center space-x-2`}
