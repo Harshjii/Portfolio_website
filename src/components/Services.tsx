@@ -8,8 +8,6 @@ const Services = () => {
     {
       icon: Globe,
       title: 'Portfolio Websites',
-      price: '₹1,999',
-      originalPrice: '₹2,999',
       description: 'Professional portfolio websites that showcase your work beautifully',
       features: [
         'Responsive Design',
@@ -24,8 +22,6 @@ const Services = () => {
     {
       icon: ShoppingCart,
       title: 'E-commerce Websites',
-      price: '₹2,499',
-      originalPrice: '₹3,999',
       description: 'Complete online stores with payment integration and inventory management',
       features: [
         'Payment Gateway',
