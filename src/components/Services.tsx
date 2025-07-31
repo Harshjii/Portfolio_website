@@ -8,6 +8,8 @@ const Services = () => {
     {
       icon: Globe,
       title: 'Portfolio Websites',
+      price: '₹1,999',
+      originalPrice: '₹2,999',
       description: 'Professional portfolio websites that showcase your work beautifully',
       features: [
         'Responsive Design',
@@ -22,6 +24,8 @@ const Services = () => {
     {
       icon: ShoppingCart,
       title: 'E-commerce Websites',
+      price: '₹2,499',
+      originalPrice: '₹3,999',
       description: 'Complete online stores with payment integration and inventory management',
       features: [
         'Payment Gateway',
@@ -78,18 +82,11 @@ const Services = () => {
               )}
 
               <div className={`bg-gradient-to-br ${service.bgGradient} p-8 h-full`}>
-                <div className="flex items-center justify-between mb-6">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <div className="text-right">
-                    <div className="flex items-center space-x-2">
-                      <span className="text-2xl font-bold text-gray-900">{service.price}</span>
-                      <span className="text-lg text-gray-500 line-through">{service.originalPrice}</span>
-                    </div>
-                    <div className="text-sm text-green-600 font-medium">Save {parseInt(service.originalPrice.slice(1)) - parseInt(service.price.slice(1))}</div>
-                  </div>
+              <div className="flex items-center justify-between mb-6">
+                <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className="h-8 w-8 text-white" />
                 </div>
+              </div>
 
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
                 <p className="text-gray-700 mb-6 leading-relaxed">{service.description}</p>
