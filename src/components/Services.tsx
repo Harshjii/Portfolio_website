@@ -73,13 +73,7 @@ const Services = () => {
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              {service.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                  <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    Most Popular
-                  </div>
-                </div>
-              )}
+              
 
               <div className={`bg-gradient-to-br ${service.bgGradient} p-8 h-full`}>
               <div className="flex items-center justify-between mb-6">
