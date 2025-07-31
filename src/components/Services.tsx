@@ -100,12 +100,15 @@ const Services = () => {
                   ))}
                 </div>
 
-                <button className={`w-full bg-gradient-to-r ${service.gradient} hover:shadow-lg text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 hover:scale-105 group`}>
-                  <span className="flex items-center justify-center space-x-2">
-                    <span>Get Started</span>
-                    <Zap className="h-5 w-5 group-hover:animate-pulse" />
-                  </span>
-                </button>
+                <a
+                  href="https://wa.me/919027723883"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full bg-gradient-to-r ${service.gradient} hover:shadow-lg text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 hover:scale-105 group flex items-center justify-center space-x-2`}
+                >
+                  <span>Get Started</span>
+                  <Zap className="h-5 w-5 group-hover:animate-pulse" />
+                </a>
               </div>
             </div>
           ))}
